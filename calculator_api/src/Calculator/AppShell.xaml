@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Calculator.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Calculator"
+    FlyoutBackgroundColor = "#424852"
+    FlyoutBehavior="Flyout"
+    TabBarIsVisible="False">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" >
+        <Tab Title="Improved Calculator">
+            <ShellContent 
+                Title="Improved Calculator"
+                ContentTemplate="{DataTemplate local:MainPage}"
+               
+                />
+        </Tab>
+
+        <Tab Title="History">
+            <ShellContent 
+                Title="History"
+                ContentTemplate="{DataTemplate local:HistoryPage}" />
+        </Tab>
+        
+
+        <Tab Title="About me">
+            <ShellContent 
+                Title="About"
+                ContentTemplate="{DataTemplate local:About}" />
+        </Tab>
+
+
+    </FlyoutItem>
+    
+    
+</Shell>
