@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Project5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Project5"
+    FlyoutBackgroundColor = "#424852"
+    FlyoutBehavior="Flyout"
+    TabBarIsVisible="False">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" >
+        <Tab Title="To do List">
+            <ShellContent 
+                Title="Home"
+                ContentTemplate="{DataTemplate local:TodoListPage}"
+                 />
+        </Tab>
+
+        <Tab Title="Light Theme" >
+            <ShellContent 
+                Title="Light Theme"
+                ContentTemplate="{DataTemplate local:TodoListPage}" />
+        </Tab>
+        
+        <Tab Title="Dark Theme">
+            <ShellContent 
+                Title="Red Theme"
+                ContentTemplate="{DataTemplate local:TodoListPage}" />
+        </Tab>
+        
+        <Tab Title="Red Theme">
+            <ShellContent 
+                Title="Red Theme"
+                ContentTemplate="{DataTemplate local:TodoListPage}" />
+        </Tab>
+
+    </FlyoutItem>
+
+
+</Shell>
